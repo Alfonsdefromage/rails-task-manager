@@ -1,0 +1,14 @@
+<div class="container">
+  <h2 class="m-3"><%=@task.title%></h2>
+   <div class="d-flex justify-content-end align-items-end m-3">
+      <%= link_to edit_task_path do %>
+      <i class="fa-solid fa-paintbrush" style="color: #74C0FC;"></i>
+      <%end%>
+    </div>
+    <div class="card bg-light">
+      <p class="m-3"><%=@task.details%></p>
+    </div>
+  <div class="m-3">
+    <%= link_to "Back to tasks", tasks_path%>
+  </div>
+</div>
